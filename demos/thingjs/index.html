@@ -17,18 +17,6 @@
 </head>
 <body>
   <table width="100%" height="100%">
-    <!-- <tr>
-      <td>
-        <h1><a href="https://developers.google.com/blockly/">Blockly</a>&rlm; &gt;
-          <a href="../index.html">Demos</a>&rlm; &gt;
-          <span id="title">...</span>
-        </h1>
-      </td>
-      <td class="farSide">
-        <select id="languageMenu"></select>
-        <a class="privacyLink" href="https://policies.google.com/privacy">Privacy</a>
-      </td>
-    </tr> -->
     <tr>
       <td colspan=2>
         <table width="100%">
@@ -390,14 +378,19 @@
     <category name="%{BKY_CATVARIABLES}" colour="%{BKY_VARIABLES_HUE}" custom="VARIABLE"></category>
     <category name="%{BKY_CATFUNCTIONS}" colour="%{BKY_PROCEDURES_HUE}" custom="PROCEDURE"></category>
     <sep></sep>
+    <category name="THING 物体">
+      <block type="thing_object"></block>
+    </category>
+    <category name="THING 场景">
+      <block type="thing_scene"></block>
+      <block type="thing_scene_test"></block>
+    </category>
     <category name="THING 相机">
       <block type="test"></block>
+      <block type="thing_camera_flyTo"></block>
     </category>
   </xml>
-  <script src="blocks/test.js"></script>
-  <script src="blocks/test.js.js"></script>
   <script src="thing.js"></script>
-  <script src="thing.main.js"></script>
   <script src="code.js"></script>
 </body>
 </html>
